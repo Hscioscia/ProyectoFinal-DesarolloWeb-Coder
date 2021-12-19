@@ -184,50 +184,51 @@ text-align: left;
 @media only screen and (max-width: 576px){
     .gridCont {
         display: grid;
-        grid-template-columns: 1.1fr 1.3fr 1.1fr;
-        grid-template-rows: 1fr 0.4fr 0.4fr 0.2fr;
+        grid-template-columns: 1fr 1.3fr;
+        grid-template-rows: 1fr 0.3fr 0.3fr;
         gap: 10px 10px;
         grid-auto-flow: row;
         grid-template-areas:
-        "section1 . . "
-        "img1 . ."
-        "img2 . ."
-        "section2 . ."
-        "pieDePagina . . ";
+        "section1"
+        "img1"
+        "img2"
+        "section2";
     }    
     .section2 { grid-area: section2; }
 
     .section1 { grid-area: section1; }
     
-    .pieDePagina { grid-area: pieDePagina; }
-    
     .img1 { grid-area: img1; }
     
     .img2 { grid-area: img2; }
     
-    .img { grid-area: img;}
 
     body{
         max-width: 540px;
     }
     .section1{
-        max-width: 540px;
+        max-width: 520px;
     }
     .section2{
-        max-width: 540px;
+        max-width: 520px;
     }
     h1{
-        font-size: 3.75em;
+        font-size: 4.75em;
     }
     h2{
-        font-size: 1.50em;
+        font-size: 2.50em;
     }
     .menu{
         text-align:center;
     }
     .img1{
         padding: 0px;
+        width: 100%;
         object-fit: contain;
+        }
+    }
+    .img2{
+    width: 100%;
     }
     .galery {
         display: grid;
@@ -235,5 +236,4 @@ text-align: left;
         gap: 10px;
         margin: 10px;
         width: 90%;
-    }
     }
