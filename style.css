@@ -12,7 +12,7 @@ body {
 h1 {
     color: rgba(225, 248, 21, 0.705);
     font-family: 'Amatic SC', cursive;
-    font-size: 140px;
+    font-size: 8.75em;
     margin: 10px;
     padding: 20px;
     text-decoration: underline;
@@ -26,7 +26,7 @@ h1 :visited{
 h2 {
     color: rgba(225, 248, 21, 0.705);
     font-family: 'Amatic SC', cursive;
-    font-size: 60px;
+    font-size: 3.75em;
     line-height: 1.6;
 }
 
@@ -39,11 +39,8 @@ h2 {
 }
 
 .section2 {
-    background-color: lightgreen;
+    background-color: rgba(144, 238, 144, 0.473);
     line-height: 1.6;
-    overflow: auto;
-    width: 300px;
-    height: 200px;
     color: black;
     padding: 10px;
     margin: 30px;
@@ -53,7 +50,7 @@ h2 {
 .menu {
     padding: 0;
     margin: 15px auto;
-    width: 90%;
+    width: 95%;
     color: darkslategray;
     text-align: right;
     color: black;
@@ -89,7 +86,7 @@ h2 {
 }
 
 .serv {
-    color: dodgerblue;
+    color: rgb(0, 0, 0);
 }
 
 .form {
@@ -116,32 +113,127 @@ img    {
 img:hover {
     opacity: 1;
     border: solid white 2px;
+    transform: scale(1.1);
+}
+.img1{
+    padding: 80px;
+}
+.img2{
+    padding-right: 80px;
+    padding-top: 80px;
 }
 
 .pieDePagina {
 margin: 10px;
 padding: 10px;
-color: chocolate;
+color: rgb(182, 60, 12);
+text-align: left;
 }
+
+.pbox{
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: rgba(225, 248, 21, 0.863);
+}
+.servi{
+    background-color: rgba(156, 161, 106, 0.589);
+    line-height: 1.6;
+    padding: 15px;
+    margin: 25px;
+    font-weight: bold;
+    border: dotted;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". form ."
+    ". pbox .";
+}
+
+.form { grid-area: form; }
+
+.pbox { grid-area: pbox; }
 
 .gridCont {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1.3fr 1.1fr;
     grid-template-rows: 1fr 1fr 1fr 0.2fr;
     gap: 10px 10px;
     grid-auto-flow: row;
+    grid-template-areas:
+    "section1 section1 section1"
+    "img1 . img2"
+    "section2 section2 section2"
+    "pieDePagina pieDePagina pieDePagina";
 }
 
-.h1 { grid-area: 1 / 1 / 2 / 2; }
+.section2 { grid-area: section2; }
 
-.h2 { grid-area: 1 / 2 / 2 / 3; }
+.section1 { grid-area: section1; }
 
-.img { grid-area: 2 / 1 / 3 / 2; }
+.pieDePagina { grid-area: pieDePagina; }
 
-.section1 { grid-area: 2 / 2 / 3 / 4; }
+.img1 { grid-area: img1; }
 
-.section2 { grid-area: 3 / 1 / 4 / 2; }
+.img2 { grid-area: img2; }
 
-.pieDePagina { grid-area: 4 / 1 / 5 / 4; }
+@media only screen and (max-width: 576px){
+    .gridCont {
+        display: grid;
+        grid-template-columns: 1.1fr 1.3fr 1.1fr;
+        grid-template-rows: 1fr 0.4fr 0.4fr 0.2fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "section1 . . "
+        "img1 . ."
+        "img2 . ."
+        "section2 . ."
+        "pieDePagina . . ";
+    }    
+    .section2 { grid-area: section2; }
 
-.logo { grid-area: 1 / 1 / 2 / 2; }
+    .section1 { grid-area: section1; }
+    
+    .pieDePagina { grid-area: pieDePagina; }
+    
+    .img1 { grid-area: img1; }
+    
+    .img2 { grid-area: img2; }
+    
+    .img { grid-area: img;}
+
+    body{
+        max-width: 540px;
+    }
+    .section1{
+        max-width: 540px;
+    }
+    .section2{
+        max-width: 540px;
+    }
+    h1{
+        font-size: 3.75em;
+    }
+    h2{
+        font-size: 1.50em;
+    }
+    .menu{
+        text-align:center;
+    }
+    .img1{
+        padding: 0px;
+        object-fit: contain;
+    }
+    .galery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+    }
