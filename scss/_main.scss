@@ -74,7 +74,7 @@ img    {
 
 .img2 { grid-area: img2; }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px){ /*Media Query Mobile*/
     .gridCont {
         display: grid;
         grid-template-columns: 1.3fr;
@@ -134,7 +134,7 @@ img    {
         color: #e1f815b4;
     }
     
-    @media (max-width:767px) {
+    @media (max-width:767px) { /*Media Query Galeria*/
         .lightbox-gallery h2 {
             margin-bottom: 25px;
             padding-top: 25px;
