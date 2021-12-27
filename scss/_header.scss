@@ -1,0 +1,38 @@
+h1 {
+    color: $fc_claro;
+    font-family: 'Amatic SC', cursive;
+    font-size: 8.75em;
+    margin: 10px;
+    padding: 20px;
+    text-decoration: underline;
+    text-align: center;
+    
+    &:visited{
+        color: $fc_claro;
+    }
+    
+}
+
+h2 {
+    color: $fc_claro;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.75em;
+    line-height: 1.6;
+        &.subtitular {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: underline;
+        text-align: center;
+        animation: pulse;
+        animation-duration: 2s;
+    }
+}
+
+.servi{
+    background-color: #9ca16a96;
+    line-height: 1.6;
+    padding: 15px;
+    margin: 25px;
+    font-weight: bold;
+    border: dotted;
+}
