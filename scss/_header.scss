@@ -10,7 +10,9 @@ h1 {
     &:visited{
         color: $fc_claro;
     }
-    
+    &:hover{
+        color:$fc_claro;
+    }
 }
 
 h2 {
@@ -28,7 +30,7 @@ h2 {
     }
 }
 
-.servi{ /*Section Servicios p*/
+.servi{
     background-color: #9ca16a96;
     line-height: 1.6;
     padding: 15px;

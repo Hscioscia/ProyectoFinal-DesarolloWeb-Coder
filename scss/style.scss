@@ -1,3 +1,12 @@
+//Mixins
+@mixin section {
+    line-height: 1.6;
+    color: black;
+    padding: 15px;
+    margin: 25px;
+    border: black 2px solid;
+}
+
 $fc_claro:#e1f815b4;
 @import "body";
 @import "header";

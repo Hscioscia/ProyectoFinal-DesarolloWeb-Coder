@@ -1,19 +1,12 @@
 
 .section1 {
+    @include section;
     background-color: #9ca16a96;
-    line-height: 1.6;
-    padding: 15px;
-    margin: 25px;
-    border: double;
 }
 
 .section2 {
+    @include section;
     background-color: #90ee9079;
-    line-height: 1.6;
-    color: black;
-    padding: 10px;
-    margin: 30px;
-    border: black 2px solid;
 }
 
 .produc {
@@ -31,25 +24,29 @@ img    {
     height: 550px;
 }
 
+.logo1{
+    height: 120px;
+    width: 300px;
+}
+
 .carousel-inner{
     margin-left: 50%;
 }
 
 .carousel-indicators{
-    margin-left: 50%;
+    @extend .carousel-inner;
 }
-.navbar{
-    font-size: 2rem;
-    font-weight:lighter;
+
+.navbar {
+    font-family:'Moon Dance', cursive;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .container{
     margin-left: 30%;
     padding: 10px;
     
-}
-.form-group{
-    padding: 10px;
 }
 
 .gridCont {
@@ -74,7 +71,7 @@ img    {
 
 .img2 { grid-area: img2; }
 
-@media only screen and (max-width: 576px){ /*Media Query Mobile*/
+@media only screen and (max-width: 576px){
     .gridCont {
         display: grid;
         grid-template-columns: 1.3fr;
@@ -134,7 +131,7 @@ img    {
         color: #e1f815b4;
     }
     
-    @media (max-width:767px) { /*Media Query Galeria*/
+    @media (max-width:767px) {
         .lightbox-gallery h2 {
             margin-bottom: 25px;
             padding-top: 25px;
