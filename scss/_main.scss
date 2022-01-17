@@ -1,21 +1,49 @@
 
 .section1 {
     @include section;
-    background-color: #9ca16a96;
+        background: rgb(34,193,195);
+        background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(0,0,0,0.5158438375350141) 100%);
+    margin-top: 100px;
 }
 
 .section2 {
     @include section;
-    background-color: #90ee9079;
+    margin-top: 150px;
+    background: rgb(34,193,195);
+    background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(59,78,27,0.5158438375350141) 100%);
+}
+
+.calidad{
+    @include section;
+    background: rgb(34,193,195);
+    background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(176,255,36,0.5158438375350141) 100%);
 }
 
 .produc {
-    padding: 10px;
+    padding: 5px;
     font-size: 5rem;
     color: rgb(0, 0, 0);
 }
 
-.serv {
+.calid{
+    padding: 5px;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.servi{
+    background: rgb(34,193,195);
+    background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(176,255,36,0.5158438375350141) 100%);
+    line-height: 1.6;
+    padding: 15px;
+    margin: 25px;
+    font-weight: bold;
+    border: solid;
+    border-radius: 10px;
+}
+
+.serv{
     color: #000000;
 }
 
@@ -33,6 +61,10 @@ img    {
     margin-left: 50%;
 }
 
+.carousel-innerr{
+    margin-right: 50%;
+}
+
 .carousel-indicators{
     @extend .carousel-inner;
 }
@@ -41,6 +73,9 @@ img    {
     font-family:'Moon Dance', cursive;
     font-size: 3rem;
     font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 65px;
+    height: 50px;
 }
 
 .container{
@@ -49,17 +84,40 @@ img    {
     
 }
 
+/*Galeria*/
+.intro{
+    width: 700px;
+    margin: auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+}
+
+.lightbox-gallery .item{
+    padding-bottom: 30px
+}
+
+.item:hover{
+    -webkit-transform:scale(1.4);
+    -webkit-box-shadow:0px 0px 30px rgb(31, 30, 30);
+}
+
+/*Galeria*/
+
 .gridCont {
     display: grid;
     grid-template-columns: 1.1fr 1.3fr 1.1fr;
-    grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
     "section1 section1 section1"
+    "calidad calidad calidad"
     "img1 . img2"
     "section2 section2 section2"
 }
+
+.calidad { grid-area: calidad;}
 
 .section2 { grid-area: section2; }
 
@@ -71,6 +129,7 @@ img    {
 
 .img2 { grid-area: img2; }
 
+/*Media Querys*/
 @media only screen and (max-width: 576px){
     .gridCont {
         display: grid;
@@ -123,7 +182,7 @@ img    {
     .lightbox-gallery p {
         color: #fff
     }
-    
+
     .lightbox-gallery h2 {
         font-weight: bold;
         margin-bottom: 40px;

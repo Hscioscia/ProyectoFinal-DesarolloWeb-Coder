@@ -5,9 +5,14 @@
     padding: 15px;
     margin: 25px;
     border: black 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    height: 300px;
+    font-size: 1.1rem;
 }
 
-$fc_claro:#e1f815b4;
+
+$fc_claro:#e1f815;
 @import "body";
 @import "header";
 @import "main";

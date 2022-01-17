@@ -5,6 +5,19 @@
 }
 
 body {
-    background-image: url(../img/back.jpg);
-    background-size: cover;
+    background-image: url(../img/background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a:link{
+    text-decoration: none; color: $fc_claro; border: 0px;
+} 
+
+a:active{
+    color : $fc_claro; border: 0px;
+} 
+
+a:visited{
+    color :$fc_claro ; border: 0px;
 }
