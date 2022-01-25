@@ -1,0 +1,116 @@
+
+@media only screen and (max-width: 576px){
+    .gridCont {
+        display: grid;
+        grid-template-columns: 1.0fr;
+        grid-template-rows: 0.3fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "section1"
+        "calidad"
+        "carousel-inner"
+        "section2";
+    }    
+    .section2 { grid-area: section2; }
+
+    .section1 { grid-area: section1; }
+    
+    .carousel-inner { grid-area: carousel-inner; }
+
+    .calidad { grid-area: calidad;}
+
+    body{
+        max-width: 576px;
+    }
+    .section1{
+        max-width: 520px;
+        height: auto;
+    }
+    .section2{
+        max-width: 520px;
+        height: auto;
+    }
+    .calidad{
+        max-width: 520px;
+        height: auto;
+    }
+    h1{
+        font-size: 6.75em;
+    }
+    h2{
+        font-size: 3.50em;
+    }
+    .container{
+        margin-left: 3%;
+        padding: 0px;
+    }
+    .navbar{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .carousel-inner{
+    max-width: 510px;
+    height: auto;
+    margin: 30px;
+    padding-right: 10px;
+    }
+    .lightbox-gallery {
+        color: #000;
+        overflow-x: hidden
+    }
+    
+    .lightbox-gallery p {
+        color: #fff
+    }
+
+    .lightbox-gallery h2 {
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        color: #e1f815b4;
+    }
+    
+    @media (max-width:576px) {
+        .lightbox-gallery h2 {
+            margin-bottom: 25px;
+            padding-top: 25px;
+            font-size: 24px
+        }
+    }
+    
+    .lightbox-gallery .intro {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto 40px
+    }
+    
+    .lightbox-gallery .intro p {
+        margin-bottom: 0
+    }
+    
+    .lightbox-gallery .photos {
+        padding-bottom: 20px
+    }
+    
+    .lightbox-gallery .item {
+        padding-bottom: 30px
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+    font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+    .footer .footer-center i {
+    margin-left: 0;
+    }
+}
