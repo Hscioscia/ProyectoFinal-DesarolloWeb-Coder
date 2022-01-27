@@ -22,6 +22,7 @@
 
     body{
         max-width: 576px;
+        overflow-x: hidden;
     }
     .section1{
         max-width: 500px;
@@ -36,10 +37,10 @@
         height: auto;
     }
     h1{
-        font-size: 8.75em;
+        font-size: 7.75em;
     }
     h2{
-        font-size: 5.50em;
+        font-size: 4.50em;
     }
     .container{
         margin-left: 3%;
@@ -48,6 +49,10 @@
 
     .container2{
         margin-left: 25%;
+    }
+
+    .carousel-indicators{
+        display: none;
     }
 
     .navbar{
@@ -60,22 +65,12 @@
     margin: 30px;
     padding-right: 10px;
     }
-    .lightbox-gallery {
-        color: #000;
-        overflow-x: hidden
-    }
-    
-    .lightbox-gallery p {
-        color: #fff
+
+    .contac{
+        max-width: 500px;
+        font-size: 30px;
     }
 
-    .lightbox-gallery h2 {
-        font-weight: bold;
-        margin-bottom: 40px;
-        padding-top: 40px;
-        color: #e1f815b4;
-    }
-    
     @media (max-width:576px) {
         .lightbox-gallery h2 {
             margin-bottom: 25px;
@@ -101,6 +96,22 @@
     .lightbox-gallery .item {
         padding-bottom: 30px
     }
+    .lightbox-gallery {
+        color: #000;
+        overflow-x: hidden
+    }
+    
+    .lightbox-gallery p {
+        color: #fff
+    }
+
+    .lightbox-gallery h2 {
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        color: #e1f815b4;
+    }
+    
 }
 
 @media (max-width: 576px) {
