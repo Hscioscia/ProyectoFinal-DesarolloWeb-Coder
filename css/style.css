@@ -467,33 +467,36 @@ img {
     max-width: 576px;
   }
   .section1 {
-    max-width: 520px;
+    max-width: 500px;
     height: auto;
   }
   .section2 {
-    max-width: 520px;
+    max-width: 500px;
     height: auto;
   }
   .calidad {
-    max-width: 520px;
+    max-width: 500px;
     height: auto;
   }
   h1 {
-    font-size: 6.75em;
+    font-size: 8.75em;
   }
   h2 {
-    font-size: 3.50em;
+    font-size: 5.50em;
   }
   .container {
     margin-left: 3%;
     padding: 0px;
+  }
+  .container2 {
+    margin-left: 25%;
   }
   .navbar {
     height: auto;
     padding-bottom: 10px;
   }
   .carousel-inner, .carousel-indicators {
-    max-width: 510px;
+    max-width: 500px;
     height: auto;
     margin: 30px;
     padding-right: 10px;
@@ -517,14 +520,14 @@ img {
   .lightbox-gallery h2 {
     margin-bottom: 25px;
     padding-top: 25px;
-    font-size: 24px;
+    font-size: 44px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .lightbox-gallery .intro {
-    font-size: 16px;
-    max-width: 500px;
+    font-size: 26px;
+    max-width: 576px;
     margin: 0 auto 40px;
   }
   .lightbox-gallery .intro p {
@@ -540,7 +543,7 @@ img {
 
 @media (max-width: 576px) {
   .footer {
-    font-size: 14px;
+    font-size: 24px;
   }
   .footer .footer-left,
   .footer .footer-center,
