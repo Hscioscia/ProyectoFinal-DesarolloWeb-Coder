@@ -43,19 +43,50 @@
     color: rgb(0, 0, 0);
 }
 
+.error, .error2{
+    text-align: center;
+}
+
+.error3{
+    text-align: center;
+    font-size: 2em;
+}
+
 .servi{
     background: rgb(34,193,195);
-    background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(176,255,36,0.5158438375350141) 100%);
+    background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(151,38,231,0.6446953781512605) 100%);
     line-height: 1.6;
-    padding: 15px;
-    margin: 25px;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    width: 50%;
     font-weight: bold;
     border: solid;
     border-radius: 10px;
+    text-align: center;
+}
+
+.servicios{
+    background: rgb(34,193,195);
+    background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(151,38,231,0.6446953781512605) 100%);
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .serv{
-    color: #000000;
+    color: rgb(0, 0, 0);
+}
+
+.contac{
+    background: rgb(34,193,195);
+    background: linear-gradient(163deg, rgba(34,193,195,1) 0%, rgba(238,27,141,0.6446953781512605) 100%);
+    width: 25%;
+    margin: auto;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: $fc_claro;
 }
 
 img    {

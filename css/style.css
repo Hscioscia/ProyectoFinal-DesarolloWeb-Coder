@@ -59,11 +59,9 @@ h2.subtitular {
 h3 {
   color: white;
   font-family: 'Amatic SC', cursive;
-  text-decoration: underline;
-  font-size: 3.5em;
+  font-size: 3.6em;
   font-weight: bolder;
   padding: 20px;
-  padding-top: 100px;
   text-align: center;
 }
 
@@ -144,19 +142,50 @@ h3 {
   color: black;
 }
 
+.error, .error2 {
+  text-align: center;
+}
+
+.error3 {
+  text-align: center;
+  font-size: 2em;
+}
+
 .servi {
   background: #22c1c3;
-  background: linear-gradient(163deg, #22c1c3 0%, rgba(176, 255, 36, 0.515844) 100%);
+  background: linear-gradient(163deg, #22c1c3 0%, rgba(151, 38, 231, 0.644695) 100%);
   line-height: 1.6;
-  padding: 15px;
-  margin: 25px;
+  margin-left: 25%;
+  margin-bottom: 3%;
+  width: 50%;
   font-weight: bold;
   border: solid;
   border-radius: 10px;
+  text-align: center;
+}
+
+.servicios {
+  background: #22c1c3;
+  background: linear-gradient(163deg, #22c1c3 0%, rgba(151, 38, 231, 0.644695) 100%);
+  border: solid;
+  border-radius: 10px;
+  border-color: black;
+  color: black;
 }
 
 .serv {
-  color: #000000;
+  color: black;
+}
+
+.contac {
+  background: #22c1c3;
+  background: linear-gradient(163deg, #22c1c3 0%, rgba(238, 27, 141, 0.644695) 100%);
+  width: 25%;
+  margin: auto;
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+  color: #e1f815;
 }
 
 img {
