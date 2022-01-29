@@ -22,25 +22,26 @@
 
     body{
         max-width: 576px;
-        overflow-x: hidden;
+        font-size: 12px;
     }
     .section1{
-        max-width: 500px;
+        max-width: 31.25rem;
         height: auto;
     }
     .section2{
-        max-width: 500px;
+        max-width: 31.25rem;
+        width: auto;
         height: auto;
     }
     .calidad{
-        max-width: 500px;
+        max-width: 31.25rem;
         height: auto;
     }
     h1{
-        font-size: 7.75em;
+        font-size: 7.75rem;
     }
     h2{
-        font-size: 4.50em;
+        font-size: 4.50rem;
     }
     .container{
         margin-left: 3%;
@@ -60,15 +61,20 @@
         padding-bottom: 10px;
     }
     .carousel-inner{
-    max-width: 500px;
+    max-width: 31.25rem;
     height: auto;
     margin: 30px;
     padding-right: 10px;
     }
 
     .contac{
-        max-width: 500px;
-        font-size: 30px;
+        max-width: 31.25rem;
+        font-size: 20px;
+    }
+
+    .container{
+        max-width: 31.25rem;
+        margin: auto;
     }
 
     @media (max-width:576px)  and (min-width:300px) {
@@ -81,7 +87,7 @@
     
     .lightbox-gallery .intro {
         font-size: 26px;
-        max-width: 576px;
+        max-width: 500px;
         margin: 0 auto 40px
     }
     
@@ -116,17 +122,18 @@
 
 @media (max-width: 576px)  and (min-width:300px) {
     .footer {
-    font-size: 24px;
+        font-size: 14px;
     }
     .footer .footer-left,
     .footer .footer-center,
     .footer .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
+    
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
     }
     .footer .footer-center i {
-    margin-left: 0;
+        margin-left: 0;
     }
 }
+
