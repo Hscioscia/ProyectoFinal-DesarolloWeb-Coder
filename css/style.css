@@ -464,22 +464,27 @@ img {
     -ms-grid-column: 1;
     grid-area: calidad;
   }
+  html, body {
+    overflow-x: hidden;
+  }
   body {
     max-width: 576px;
     font-size: 12px;
   }
   .section1 {
-    max-width: 31.25rem;
+    width: 80%;
+    max-width: 400px;
     height: auto;
   }
   .section2 {
-    max-width: 31.25rem;
-    width: auto;
+    width: 80%;
+    max-width: 400px;
     height: auto;
   }
   .calidad {
-    max-width: 31.25rem;
     height: auto;
+    width: 80%;
+    max-width: 400px;
   }
   h1 {
     font-size: 7.75rem;
@@ -487,12 +492,19 @@ img {
   h2 {
     font-size: 4.50rem;
   }
+  h3 {
+    font-size: 2rem;
+  }
   .container {
     margin-left: 3%;
     padding: 0px;
+    width: 80%;
+    max-width: 400px;
   }
   .container2 {
     margin-left: 25%;
+    width: 80%;
+    max-width: 400px;
   }
   .carousel-indicators {
     display: none;
@@ -502,18 +514,21 @@ img {
     padding-bottom: 10px;
   }
   .carousel-inner, .carousel-indicators {
-    max-width: 31.25rem;
     height: auto;
     margin: 30px;
     padding-right: 10px;
+    width: 80%;
+    max-width: 400px;
   }
   .contac {
-    max-width: 31.25rem;
     font-size: 20px;
+    width: 80%;
+    max-width: 400px;
   }
   .container {
-    max-width: 31.25rem;
     margin: auto;
+    width: 80%;
+    max-width: 400px;
   }
 }
 
@@ -562,7 +577,7 @@ img {
   .footer .footer-left,
   .footer .footer-center,
   .footer .footer-right {
-    width: 100%;
+    width: 90%;
     margin-bottom: 40px;
     text-align: center;
   }
